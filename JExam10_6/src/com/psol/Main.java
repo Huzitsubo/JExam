@@ -79,7 +79,7 @@ public class Main {
 		System.out.println("********************************************");
 		System.out.printf("\n\n");
 		System.out.println("////////////////////////////////////////////");
-		
+		customer.register();
 		System.out.println("////////////////////////////////////////////");
 	}
 
