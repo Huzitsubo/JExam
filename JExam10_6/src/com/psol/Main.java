@@ -51,21 +51,24 @@ public class Main {
 			if(sNum.equals(ENDER)){
 				break;
 			} else if(sNum.equals(TOTAL)){
+				System.out.println("現在のカート内の合計金額は");
 				customer.printTotalPrice();
-			}
+				System.out.println("円です。");
+			} else {
 			
-			try {
-				num = Integer.parseInt(sNum);
-				customer.buyItem(shop, num);
-
-			} catch (InputMismatchException e) { 		// 整数以外の入力
-				// System.err.println(e.getMessage());
-				System.err.println("数値を入力してください。");
-				sn.nextLine(); 							// スキャナクリア
-			} catch (IndexOutOfBoundsException  e) {	// リストアクセス違反
-				System.err.println("指定の商品はありません");
-				sn.nextLine();
-			} 
+				try {
+					num = Integer.parseInt(sNum);
+					customer.buyItem(shop, num);
+	
+				} catch (InputMismatchException e) { 		// 整数以外の入力
+					// System.err.println(e.getMessage());
+					System.err.println("数値を入力してください。");
+					sn.nextLine(); 							// スキャナクリア
+				} catch (IndexOutOfBoundsException  e) {	// リストアクセス違反
+					System.err.println("指定の商品はありません");
+					sn.nextLine();
+				} 
+			}
 		}
 		sn.close();
 		
@@ -74,6 +77,10 @@ public class Main {
 		System.out.println("********************************************");
 		customer.printCustomer();
 		System.out.println("********************************************");
+		System.out.printf("\n\n");
+		System.out.println("////////////////////////////////////////////");
+		
+		System.out.println("////////////////////////////////////////////");
 	}
 
 
