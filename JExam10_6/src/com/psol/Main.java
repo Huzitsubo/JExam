@@ -51,7 +51,7 @@ public class Main {
 			if(sNum.equals(ENDER)){
 				break;
 			} else if(sNum.equals(TOTAL)){
-				
+				customer.printTotalPrice();
 			}
 			
 			try {

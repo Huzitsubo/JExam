@@ -60,7 +60,7 @@ public class Customer {
 	}
 	
 	public void printTotalPrice() {
-		System.out.println(myCart.getTotalPrice());
+		System.out.print(myCart.getTotalPrice());
 		
 	}
 }
