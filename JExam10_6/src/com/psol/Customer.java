@@ -44,6 +44,11 @@ public class Customer {
 		myCart.printCart();
 	}
 	
+	/**
+	 * @param none
+	 * @return none
+	 * @throws none
+	 */
 	public void register() {
 		int total = myCart.getTotalPrice();
 		System.out.println("商品を清算します。");
@@ -59,6 +64,11 @@ public class Customer {
 		}
 	}
 	
+	/**
+	 * @param none
+	 * @return none
+	 * @throws none 
+	 */
 	public void printTotalPrice() {
 		System.out.print(myCart.getTotalPrice());
 		

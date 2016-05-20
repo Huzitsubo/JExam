@@ -36,7 +36,9 @@ public class Item {
 	}
 
 	/**
+	 * @param none
 	 * @return price
+	 * @throws none
 	 */
 	public int getPrice() {
 		return price;
